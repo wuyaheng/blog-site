@@ -104,7 +104,6 @@ nav ul a {
    bottom: 0;
    width: 100%;
    height: 30px;
-   background-color: #f6f6f6;
    color: #212529;
    text-align: center;
 }
@@ -146,6 +145,7 @@ nav ul a {
 
 header {
   background: linear-gradient(0deg, #fff 0%, #fff 13%, #1e1e1e 13%, #1e1e1e 50%);
+  height: 60vh;
 }
 
 header section {
@@ -159,23 +159,14 @@ img {
   object-fit: cover;
 }
 
-.main-img, #about img {
-  height: 25vh;
-}
+
 
 .image-holder {
-  position: relative;
+  padding-top: 2rem;
+  margin-left: 8rem;
 }
 
-.image-holder .image-block {
-    position: absolute;
-    z-index: 1;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    /* background: #282828; */
-  }
+
 
   .btn {
   position: relative;
@@ -184,7 +175,7 @@ img {
   border: none;
   border-radius: 0;
   outline: 0;
-  padding: 1.25rem 2rem;
+  padding: 0rem 2rem;
   font-family: inherit;
   font-size: 0.6875rem;
   font-weight: 700;
@@ -237,16 +228,15 @@ img {
         <header>
           <div class="container">
             <section class="row intro">
-              <div class="col-md-4">
-                <div class="info">
+              <div class="col-md-6">
+                <div class="info pt-5">
                   <h1>Alicia Manno</h1>
                   <p class="lead">Lorem ipsum dolor amet palo santo polaroid readymade coffee.</p>
                   <a class="btn fill" href="#">Learn more</a>
                 </div>
               </div>
-              <div class="col-md-8">
+              <div class="col-md-6">
                 <div class="image-holder">
-                  <div class="image-block" data-aos="reveal-bottom"></div>
                   <img class="main-img" src="https://cdn.glitch.com/defe57d3-a865-4cae-adb9-0714a14d5412%2FcuteGirl.jpeg?v=1613962130358">
                 </div>
               </div>
