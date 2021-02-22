@@ -198,6 +198,84 @@ header section {
   background-color: #fff !important;
   }
 
+
+  .card {
+    height: 470px;
+    border-radius: 10px;
+    background-color: #fff;
+    box-shadow: 0 40px 40px -20px #8fc7d544;
+    overflow: hidden;
+}
+
+.card .card-top {
+    height: 236px;
+    font-family: 'neuzeit-grotesk', sans-serif;
+    font-weight: 300;
+    font-style: normal;
+    font-size: 1em;
+    line-height: 1.5;
+    color: #303336;
+    background-color: #d1e8ee;
+    overflow: hidden;
+}
+
+.card .card-top a {
+    display: block;  
+    height: 100%;  
+}
+
+.card .card-top a img {
+    width: 100%;
+    height: inherit;
+    object-fit: cover;
+    object-position: center; 
+    transition: 300ms;
+}
+
+.card .card-content {
+    padding: 30px;
+}
+
+.card .card-content .tag {
+    font-weight: 700;
+    letter-spacing: 2px;
+}
+
+.card .tag-travel {
+    color: #33459b;
+}
+
+.card .tag-nature {
+    color: #339b4b;
+}
+
+.card .tag-architecture {
+    color: #9b3d33;
+}
+
+.card .title {
+    color: #303336;
+    font-weight: 700;
+    transition: 300ms;
+}
+
+.card p {
+    color: #7B8591;
+    margin-top: 20px;
+}
+
+
+/* ---------------------------- */
+/* Content Style | Hover Effect */
+/* ---------------------------- */
+
+.card .card-top a img:hover {
+    opacity: .75;
+}
+
+.card .title:hover {
+    color: #303336bb;
+}
 @media (max-width: 768px) {
 	#logo {
 		font-size: 90%;
@@ -236,7 +314,7 @@ header section {
     <li><a href="#contact">CONTACT</a></li> 
   </ul>
 
-        <header>
+        <header>    
           <div class="container">
             <section class="row intro">
               <div class="col-md-6">
@@ -252,8 +330,10 @@ header section {
                 </div>
               </div>
             </section>
-
-            <section class="row intro">
+            </div>  
+          </header> 
+          <div class="container">
+            <section class="row intro mb-5">
               <div class="col-md-6">
                 <div class="image-holder2 mt-5">
                   <img class="main-img2" src="https://cdn.glitch.com/defe57d3-a865-4cae-adb9-0714a14d5412%2Fgirl.jpeg?v=1614013014032">
@@ -269,20 +349,47 @@ header section {
             </section>
          
               <h2 class="text-center">Recent Blog Posts</h2>
-              
-              <section class="row">
-              <div class="col-md-4">
 
+              <section class="row mb-5" >
+              <div class="col-md-4">
+                <div class="card">
+                    <div class="card-top">
+                        <a href=""><img src="https://images.unsplash.com/photo-1593198095345-311f4d23d511?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1934&q=80" alt="Unsplash Photo"></a>
+                    </div>
+                    <div class="card-content">
+                        <h6 class="tag tag-nature">NATURE</h6>
+                        <a href=""><h3 class="title">Tower In Forest</h3></a>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                    </div>
+                </div>
               </div>
               <div class="col-md-4">
-
+                <div class="card">
+                  <div class="card-top">
+                      <a href=""><img src="https://images.unsplash.com/photo-1593198095345-311f4d23d511?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1934&q=80" alt="Unsplash Photo"></a>
+                  </div>
+                  <div class="card-content">
+                      <h6 class="tag tag-nature">NATURE</h6>
+                      <a href=""><h3 class="title">Tower In Forest</h3></a>
+                      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                  </div>
+              </div>
               </div>
               <div class="col-md-4">
-
+                <div class="card">
+                  <div class="card-top">
+                      <a href=""><img src="https://images.unsplash.com/photo-1594468075989-748bf89136c2?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=2000&q=80" alt="Unsplash Photo"></a>
+                  </div>
+                  <div class="card-content">
+                      <h6 class="tag tag-architecture">ARCHITECTURE</h6>
+                      <a href=""><h3 class="title">Hign Rise Building</h3></a>
+                      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                  </div>
+              </div>
               </div>
             </section>
           </div>
-        </header> 
+    
 
      
    
