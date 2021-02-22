@@ -19,18 +19,65 @@
 
     <style>
     @import url('https://fonts.googleapis.com/css?family=Dancing+Script&display=swap');
+    @import url('https://fonts.googleapis.com/css?family=Old+Standard+TT:400|Muli:300,700');
 
 body {
-    margin: 0;
-    padding: 0;
-    background-image: linear-gradient(to right,#f6f6f6, #f6f6f6);
-    }
+  font-family: 'Muli', sans-serif;
+  font-size: 1rem;
+  font-weight: 300;
+  line-height: 1.6;
+  margin: 0;
+  padding: 0;
+  color: #8e8e8e;
+  background: #fff;
+}
 
 html {
   overflow-y: scroll; 
 }
 
+h1, h2, h3 {
+  font-family: 'Old Standard TT', serif;
+  line-height: 1.1;
+}
 
+h2, h3 {
+  color: #282828; 
+  font-weight: 400;
+}
+
+h1 {
+  position: relative;
+  z-index: 2;
+  margin: 0 0 1rem;
+  width: 100%;
+  font-size: 3.125rem;
+  font-weight: 400;
+  color: #fff;
+}
+
+h2 {
+  font-size: 2.5rem;
+  margin: 1rem 0 1.5rem;
+}
+
+h3 {
+  font-size: 1.875rem;
+  margin: 0 0 2rem;
+}
+
+p {
+  margin: 0 0 1.5rem;
+}
+
+#logo {
+  color: #fff;
+  font-weight: 700;
+  font-size: 0.875rem;
+  letter-spacing: 0.125rem;
+  text-transform: uppercase;
+  margin: 0;
+}
 
 .nav-wrapper {
   background-color: #282828;
@@ -39,12 +86,6 @@ html {
 nav ul a {
   color: #fff !important;
 }
-
-    #logo {
-        font-family: 'Dancing Script', cursive;
-        font-size: 22px !important;
-        color: #fff;
-    }
 
     a:hover {
       text-decoration: none;
@@ -68,6 +109,13 @@ nav ul a {
    text-align: center;
 }
 
+.info {
+  margin: 1rem 0;
+}
+
+.about-info {
+  padding: 0;
+}
   .footer p {
     margin-bottom: 0;
   }
@@ -89,6 +137,65 @@ nav ul a {
 }
 
 
+.container {
+  margin: auto;
+  padding: 0 1rem;
+  max-width: 68rem;
+  width: 100%;
+}
+
+header {
+  background: linear-gradient(0deg, #fff 0%, #fff 13%, #1e1e1e 13%, #1e1e1e 50%);
+}
+
+header section {
+  padding: 0;
+}
+
+img {
+  display: block;
+	width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.main-img, #about img {
+  height: 25vh;
+}
+
+.image-holder {
+  position: relative;
+}
+
+.image-holder .image-block {
+    position: absolute;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    /* background: #282828; */
+  }
+
+  .btn {
+  position: relative;
+  display: inline-block;
+  color: #282828;
+  border: none;
+  border-radius: 0;
+  outline: 0;
+  padding: 1.25rem 2rem;
+  font-family: inherit;
+  font-size: 0.6875rem;
+  font-weight: 700;
+  text-align: center;
+  text-transform: uppercase;
+  cursor: pointer;
+  transform: translate(0);
+  letter-spacing: 0.1875rem;
+  background-color: #fff !important;
+  }
+
 @media (max-width: 768px) {
 	#logo {
 		font-size: 90%;
@@ -109,30 +216,43 @@ nav ul a {
   <div class="navbar-fixed">
     <nav class="nav-wrapper">
       <div class="container">
-          <a href="#" class="brand-logo" id="logo">Alicia Manno</a>
+          <a href="#" class="brand-logo" id="logo">ALICIA MANNO</a>
           <a href="#" class="sidenav-trigger" data-target="mobile-links">
               <i class="material-icons" style="color: #212529">menu</i>
           </a>
           <ul class="right hide-on-med-and-down">
-            <li class="myNav"><a href="#about">About</a></li>
-            <li class="myNav"><a href="#blog">Blog</a></li>
-            <li class="myNav"><a href="#contact">Contact</a></li> 
+            <li class="myNav"><a href="#about">ABOUT</a></li>
+            <li class="myNav"><a href="#blog">BLOG</a></li>
+            <li class="myNav"><a href="#contact">CONTACT</a></li> 
           </ul>
       </div>
   </nav>
 </div>
   <ul class="sidenav" id="mobile-links">
-    <li><a href="#about">About</a></li>
-    <li><a href="#blog">Blog</a></li>
-    <li><a href="#contact">Contact</a></li> 
+    <li><a href="#about">ABOUT</a></li>
+    <li><a href="#blog">BLOG</a></li>
+    <li><a href="#contact">CONTACT</a></li> 
   </ul>
 
-
-  
-              <div class="container-fluid" id="landing-section">
-                
-
-        </div>
+        <header>
+          <div class="container">
+            <section class="row intro">
+              <div class="col-md-4">
+                <div class="info">
+                  <h1>Alicia Manno</h1>
+                  <p class="lead">Lorem ipsum dolor amet palo santo polaroid readymade coffee.</p>
+                  <a class="btn fill" href="#">Learn more</a>
+                </div>
+              </div>
+              <div class="col-md-8">
+                <div class="image-holder">
+                  <div class="image-block" data-aos="reveal-bottom"></div>
+                  <img class="main-img" src="https://cdn.glitch.com/defe57d3-a865-4cae-adb9-0714a14d5412%2FcuteGirl.jpeg?v=1613962130358">
+                </div>
+              </div>
+            </section>
+          </div>
+        </header> 
 
      
    
